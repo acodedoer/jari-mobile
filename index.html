@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fontawesome-all.css">
+        <script src="ire_ire.js"></script>
+        <script src="karin_magana.js"></script>
+        <title>Jari</title>
+    </head>
+    <body>
+        <div class="row header nav">
+            <div class="col-2 home">
+                <i class="fas fa-arrow-left" id ="back_btn"></i>
+            </div>
+
+            <div class="col-10" id="header-text">
+            </div>
+        </div>
+
+        <div id="menu-page" class="page">
+            <div class="tag" name ="menu_btn" id="karin_magana" onclick="app.viewAll()"><i class="fas fa-comment-alt text-light"></i>karin magana</div>
+            <div class="tag" id="ire_ire" onclick="app.viewTags()" ><i class="fas fa-tag text-light"></i>ire-ire</div>
+            <div class="tag" id="na_gaban_goshi"><i class="fas fa-star text-light"></i>na gaban goshi</div>
+            <div class="tag" id="bayanin_mu" ><i class="fas fa-info-circle text-light"></i>bayanin mu</div>
+        </div>
+
+        <div id="about-page" class="page hide-page">
+            
+        </div>
+
+        <div id="ireire-page" class="page hide-page">
+            
+        </div>
+
+        <div id="karinmagana-page" class="page hide-page">
+            <div class="shadow-sm p-3 mb-5 bg-white rounded" id="magana-content">
+                <div class="row">
+                    <div class="col-6" id="count">
+                        
+                    </div>
+                    <div class="col-6" id="favourite">
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                
+    
+                <div id="magana">
+                </div>
+                <div id="irin_magana">
+                    <span class="tag"><i class="fas fa-tag text-light"></i>zammantakewa</span>
+                    <span class="tag"><i class="fas fa-tag text-light"></i>kai</span>
+                    <span class="tag"><i class="fas fa-tag text-light"></i>hali</span>
+                    <span class="tag"><i class="fas fa-tag text-light"></i>kanwa</span>
+                    <span class="tag"><i class="fas fa-tag text-light"></i>fari</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer nav">
+            <div class="col-3" id="tags_nav" onclick="app.viewTags()"><i class="fas fa-tags"></i></div>
+            <div class="col-3" id="previous_nav" onclick="app.displayPrevious()"><i class="fas fa-step-backward"></i></div>
+            <div class="col-3" id="next_nav" onclick="app.displayNext()"><i class="fas fa-step-forward"></i></div>
+            <div class="col-3" id="random_nav" onclick="app.randomise()"><i class="fas fa-random"></i></div>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</html>
